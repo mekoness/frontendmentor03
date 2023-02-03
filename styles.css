@@ -21,7 +21,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 98vh;
+    min-height: 100vh;
     background-color: var(--verydarkblue);
     color: var(--transparentwhite2);
 }
@@ -39,7 +39,7 @@ main {
 }
 
 .image-container {
-    background-image: url(/images/image-header-mobile.jpg);
+    background-image: url("/images/image-header-mobile.jpg");
     background-size: cover;
     height: 300px;
     border-radius: 10px 10px 0px 0px;
@@ -47,7 +47,7 @@ main {
 }
 
 .text-container {
-    padding: 2em;
+    padding: 3em;
 }
 
 .main-heading {
@@ -60,12 +60,12 @@ main {
 }
 
 .main-paragraph {
-    margin-top: 1em;
+    margin-top: 2em;
 }
 
 .sub-heading {
     color: var(--white);
-    margin-top: 1em; 
+    margin-top: 1.5em; 
 }
 
 p {
@@ -76,20 +76,21 @@ p {
 .attribution { font-size: 11px; text-align: center; margin-top: 2em; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-@media (min-width: 1024px) {
+@media (min-width: 800px) {
     main {
         display: flex;
         flex-direction: row-reverse;
+        width: 800px;
     }
 
     .overlay-bg {
-        background-color: var(--softviolet);
         border-radius: 0px 10px 10px 0px;
     }
 
     .image-container {
+        background-image: url("/images/image-header-desktop.jpg");
+        background-size: cover;
         width: 400px;
-        background-image: url(/images/image-header-desktop.jpg);
         border-radius: 0px 10px 10px 0px;
     }
 
@@ -100,5 +101,10 @@ p {
     .sub-container {
         display: flex;
         justify-content: space-between;
+    }
+
+    .sub-heading {
+        color: var(--white);
+        margin-top: 3em; 
     }
 }
